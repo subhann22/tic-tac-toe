@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+#status {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#reset {
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
